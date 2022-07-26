@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./image/paulo02.jpg);
+    background-image: url(./paulo02.jpg);
     background-size: cover;
 
     display: flex;
@@ -218,7 +218,7 @@ footer a {
 
 @media (min-width: 768px) {
     body {
-        background-image: url(./image/paulo02.jpg);
+        background-image: url(./paulo02.jpg);
     }
 
     div.buttons {
