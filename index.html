@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Churrascômetro</title>
+    </head>
+    <body>
+     
+  
+        <div id="overlay"></div>
+        <main>
+            <div class="container">
+                <h1>Churrascômetro</h1>
+                <form action="" onsubmit="Form.submit(event)">
+                    <fieldset name="people">
+                        <legend>Número de Pessoas</legend>
+                        <div class="input-field">
+                            <label for="adults"></label>
+                            <input
+                                type="number"
+                                inputmode="numeric"
+                                step="1"
+                                min="0"
+                                name="adults"
+                                id="adults"
+                                placeholder="Adultos"
+                                autocomplete="on"
+                                autofocus
+                                required
+                            />
+                        </div>
+
+                        <div class="input-field">
+                            <label for="children"></label>
+                            <input
+                                type="number"
+                                inputmode="numeric"
+                                step="1"
+                                min="0"
+                                name="children"
+                                id="children"
+                                placeholder="Crianças"
+                                autocomplete="on"
+                                required
+                            />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Duração do evento</legend>
+                        <div class="input-field">
+                            <label for="duration"></label>
+                            <input
+                                type="number"
+                                inputmode="numeric"
+                                step="0.5"
+                                min="0"
+                                name="duration"
+                                id="duration"
+                                placeholder="Horas"
+                                autocomplete="on"
+                                required
+                            />
+                            
+                        </div>
+                    </fieldset>
+
+                    <div class="buttons">
+                        <button
+                            class="reset"
+                            type="reset"
+                            onclick="Button.reset()"
+                        >
+                            Limpar
+                        </button>
+                        <button class="submit">Calcular</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container results">
+                <h2>Você vai precisar de:</h2>
+                <ul>
+                    <li>🥩 x kgs de carne</li>
+                    <li>🧃 x litros de suco</li>
+                    <li>🥤 x litros de refrigerante</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <a href="https://instagram.com/prog_ph/">
+                Feito com ❤ por  Paulo Henrique
+            </a>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
